@@ -9,7 +9,7 @@ body{
     padding: 0px;
     box-sizing: border-box;
 }
-section{
+.main{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 300px;
@@ -22,14 +22,12 @@ section{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-h1{
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-}
 .titulo{
     display: flex;
     align-items: center;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
 }
 .content{
     height: 100%;
@@ -44,8 +42,8 @@ h1{
     background: #272e38;
     border-radius: 30px;
 }
-p{
-    font-size: 10px;
+.mensagem{
+    font-size: 11px;
     color: #7a818a;
     font-weight: 300;
 }
@@ -69,6 +67,10 @@ p{
     background-color: #7c8798;
     color:white
 }
+.nota-escolhida{
+    background: #ff7825 !important;
+    color: white;
+}
 .btn{
     display: flex;
     align-items: flex-end;
@@ -87,4 +89,19 @@ button:hover{
     background-color: white;
     color:#ff7825;
     cursor: pointer;
+}
+.rate{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #272e38; 
+    color: #ff7825; 
+    border-radius: 30px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 40%;
+    width: 60%;
+    font-size: 11px;
 }
