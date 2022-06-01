@@ -1,10 +1,12 @@
 function submit(){
     if(clicado){
         const pai = document.querySelector('.main')
-        pai.setAttribute("style", "grid-template-rows: 2fr 1fr 1fr 1fr")
+        pai.setAttribute("style", "grid-template-rows: 1fr 1fr 1fr 1fr")
         const filhos = document.querySelectorAll('.content')
         filhos.forEach(i => pai.removeChild(i))
         var img = document.createElement('img')
+        img.setAttribute("src", "images/illustration-thank-you.svg")
+        img.style.margin = "auto"
         pai.appendChild(img)
         var text = document.createElement('div')
         text.innerHTML = `You selected ${valor} out of 5`
