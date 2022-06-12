@@ -1,5 +1,9 @@
 @import url('https://fonts.google.com/specimen/Overpass');
 
+:root{
+    --laranja: #ff7825
+}
+
 body{
     background-color: #141519;
     font-family: 'Overpass', sans-serif;
@@ -68,7 +72,7 @@ body{
     color:white
 }
 .nota-escolhida{
-    background: #ff7825 !important;
+    background: var(--laranja) !important;
     color: white;
 }
 .btn{
@@ -76,7 +80,7 @@ body{
     align-items: flex-end;
 }
 button{
-    background: #ff7825;
+    background: var(--laranja);
     color: white;
     border-radius: 20px;
     height: 75%;
@@ -87,7 +91,7 @@ button{
 }
 button:hover{
     background-color: white;
-    color:#ff7825;
+    color:var(--laranja);
     cursor: pointer;
 }
 .rate{
@@ -96,7 +100,7 @@ button:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     background: #272e38; 
-    color: #ff7825; 
+    color: var(--laranja); 
     border-radius: 30px;
     display: flex; 
     justify-content: center; 
