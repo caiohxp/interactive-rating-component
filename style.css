@@ -1,11 +1,16 @@
 @import url('https://fonts.google.com/specimen/Overpass');
 
 :root{
-    --laranja: #ff7825
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
 }
 
 body{
-    background-color: #141519;
+    background-color: var(--very-dark-blue);
     font-family: 'Overpass', sans-serif;
 }
 *{
@@ -29,7 +34,7 @@ body{
 .titulo{
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--white);
     font-size: 19px;
     font-weight: 700;
 }
@@ -43,12 +48,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #272e38;
+    background: var(--dark-blue);
     border-radius: 30px;
 }
 .mensagem{
     font-size: 11px;
-    color: #7a818a;
+    color: var(--medium-grey);
     font-weight: 300;
 }
 .notas{
@@ -61,27 +66,27 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #272e38;
+    background: var(--dark-blue);
     border-radius: 30px;
-    color: #7a818a;
+    color: var(--medium-grey);
     font-size: 12px;
 }
 .nota:hover{
     cursor: pointer;
     background-color: #7c8798;
-    color:white
+    color:var(--white)
 }
 .nota-escolhida{
-    background: var(--laranja) !important;
-    color: white;
+    background: var(--orange) !important;
+    color: var(--white);
 }
 .btn{
     display: flex;
     align-items: flex-end;
 }
 button{
-    background: var(--laranja);
-    color: white;
+    background: var(--orange);
+    color: var(--white);
     border-radius: 20px;
     height: 75%;
     width: 100%;
@@ -90,8 +95,8 @@ button{
     text-transform: uppercase;
 }
 button:hover{
-    background-color: white;
-    color:var(--laranja);
+    background-color: var(--white);
+    color:var(--orange);
     cursor: pointer;
 }
 .rate{
@@ -100,7 +105,7 @@ button:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     background: #272e38; 
-    color: var(--laranja); 
+    color: var(--orange); 
     border-radius: 30px;
     display: flex; 
     justify-content: center; 
